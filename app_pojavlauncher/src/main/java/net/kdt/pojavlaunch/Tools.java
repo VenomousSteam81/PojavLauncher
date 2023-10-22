@@ -125,7 +125,8 @@ public final class Tools {
         if(SDK_INT >= 29) {
             return ctx.getExternalFilesDir(null);
         }else{
-            return new File(Environment.getExternalStorageDirectory(),"games/PojavLauncher");
+            // return new File(Environment.getExternalStorageDirectory(),"games/PojavLauncher");
+            return ctx.getExternalFilesDir(null);
         }
     }
 
